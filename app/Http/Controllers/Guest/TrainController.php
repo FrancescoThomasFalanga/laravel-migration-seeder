@@ -11,7 +11,9 @@ class TrainController extends Controller
     
     public function index() {
 
-        $trains = Train::all()->where('departure_time', '>', now());
+        $trains = Train::all()
+                            ->where('departure_time', '>', now())
+                            ;
 
         return view('home', compact('trains'));
 

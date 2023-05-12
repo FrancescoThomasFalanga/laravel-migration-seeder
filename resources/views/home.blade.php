@@ -39,7 +39,7 @@
                 </li>
                 <li class="list">
                     <p>
-                        {{ ($singleTrain->in_time == null ? 'nessun ritardo' : 'Ritardo: ' . $singleTrain->in_time) }}
+                        {{ ($singleTrain->in_time == null ? 'Nessun Ritardo' : 'In Ritardo') }}
                     </p>
                 </li>
             </ul>
