@@ -35,6 +35,36 @@ class TrainsSeeder extends Seeder
 
             $train->save();
         }
+
+        
+
+
+        // ------------------------ IMPLEMENTO DATI DB VIA FILE EXCEL CSV ----------------------------------------
+
+        // $trainFile = fopen(__DIR__ . '/../train_db.csv', 'r');
+
+        // $trainCSV = fgetcsv($trainFile);
+        // $trainCSV = fgetcsv($trainFile);
+
+        // while ($trainCSV != false) {
+
+        //     $train = new Train();
+
+        //     $train->train_category = $trainCSV[0];
+        //     $train->agency = $trainCSV[1];
+        //     $train->departure_station = $trainCSV[2];
+        //     $train->arrival_station = $trainCSV[3];
+        //     $train->departure_time = $trainCSV[4];
+        //     $train->arrival_time = $trainCSV[5];
+        //     $train->train_code = $trainCSV[6];
+        //     $train->carriage_number = $trainCSV[7];
+        //     $train->in_time = $trainCSV[8];
+        //     $train->deleted = $trainCSV[9];
+
+        //     $train->save();
+
+        //     $trainCSV = fgetcsv($trainFile);
+        // }
         
     }
 }
